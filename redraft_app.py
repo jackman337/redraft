@@ -144,7 +144,7 @@ final_5_dfs = [rod_qb, rod_rb, rod_wr, rod_te]
 final_5 = pd.DataFrame([final_5_dfs], columns = ["QBs", "RBs", "WRs", "TEs"])
 
 ### Sidebar ###
-
+st.sidebar.image('ffa_red.png', use_column_width=True)
 st.sidebar.markdown(" ## About This App")
 st.sidebar.markdown("This app is designed to be used while you're drafting. Simply add the positions you've drafted (in order) and see what position the simulations suggest you draft next! With every pick the sample size of drafts the simulation has seen will become smaller and smaller. If you ever get to a point where there are no suggestions, you can add that build to the database by clicking the link below.")
 st.sidebar.markdown("Please note that these are suggestions! You in no way need to draft the top position each time. Especially if there's a much better ADP value at another position! This is meant to be a guide to help out as much as possible. It's also helpful to know how to end the final 5 rounds if you've started off with a build that the simulations have seen before")
