@@ -9,11 +9,11 @@ url = 'https://raw.githubusercontent.com/nzylakffa/redraft/main/Redraft%20Optima
 df = pd.read_csv(url,index_col=0)
 df['Total Points'] = df['Average Points']*17
 
-st.title("Input Positions Drafted")
+st.title("Draft Strategy App:")
 st.header("Submit a Max of 9 Rounds!")
 
 ### Imput Picks Thus Far ###
-picks = st.multiselect(label = "Must be done in order!", options = ["QB", "QB", "QB", "QB", "QB",
+picks = st.multiselect(label = "Add positions you've drafted - Must be done in order!", options = ["QB", "QB", "QB", "QB", "QB",
                                                               "RB", "RB", "RB", "RB", "RB", "RB", "RB", "RB", "RB",
                                                               "WR", "WR", "WR", "WR", "WR", "WR", "WR", "WR", "WR",
                                                               "TE", "TE", "TE", "TE"])
